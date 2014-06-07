@@ -4,7 +4,8 @@
   "devDependencies": {
     "gulp": "^3.6.2",
     "gulp-hogan-compile": "^0.2.1",
-    "gulp-less": "^1.2.3"
+    "gulp-less": "^1.2.3",
+    "gulp-shell": "^0.2.5"
   },
   "dependencies": {}
 }
