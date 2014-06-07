@@ -1,0 +1,5 @@
+{% embed 'util/form/custom-input.twig' with {'name': name,'label': label,'help':help} %}
+    {% block input %}
+        <textarea name="{{ name }}" id="input-{{ name }}" placeholder="{{ placeholder|default(label) }}" rows="4" class="form-control">{{ value }}</textarea>
+    {% endblock %}
+{% endembed %}

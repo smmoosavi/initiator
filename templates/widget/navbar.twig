@@ -1,0 +1,5 @@
+{% if _user is null %}
+    {% include 'widget/public-nav.twig' %}
+{% else %}
+    {% include 'widget/user-nav.twig' %}
+{% endif %}

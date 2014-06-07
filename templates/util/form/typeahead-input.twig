@@ -1,0 +1,12 @@
+{% embed 'util/form/custom-input.twig' with {'name': name,'label': label,'help':help} %}
+    {% block input %}
+        <input type="text"
+               class="form-control"
+               name="{{ name }}"
+               id="input-{{ name }}"
+               placeholder="{{ placeholder|default(label) }}"
+               value="{{ value }}"
+               data-provide="typeahead"
+               autocomplete="off">
+    {% endblock %}
+{% endembed %}

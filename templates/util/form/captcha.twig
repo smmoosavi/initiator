@@ -1,0 +1,11 @@
+<div class="input-group w12 mb5">
+    <span class="input-group-addon p0">
+        <img src="{{ urlFor('captcha') }}" alt="captcha" data-image-captcha>
+    </span>
+    <input type="text" name="captcha" placeholder="{{ __('captcha') }}" class="form-control" autocomplete="off">
+    <span class="input-group-btn">
+        <button class="btn btn-default" type="button" data-refresh-captcha>
+            <i class="fa fa-refresh"></i>
+        </button>
+    </span>
+</div>

@@ -1,0 +1,7 @@
+<div class="input-group w12">
+    <span class="input-group-addon w{{ lw|default('4') }}">
+        <label for="input-{{ name }}" class="control-label w12 text-right">{{ label }}</label>
+    </span>
+    {% block input %}
+    {% endblock %}
+</div>

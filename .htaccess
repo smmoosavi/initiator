@@ -1,0 +1,6 @@
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^statics/ - [L,NC]
+
+RewriteRule ^   index.php    [NC,L,QSA]

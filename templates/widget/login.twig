@@ -1,0 +1,20 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">login</div>
+    <div class="panel-body">
+        {% include 'util/messages.twig' %}
+        <form action="{{ urlFor('login-post') }}" method="post" id="login-form">
+            <div class="input-group input-group-lg mb5">
+                <span class="input-group-addon"><i class="fa fa-fw fa-user"></i></span>
+                <input class="form-control" type="text" name="username" placeholder="username">
+            </div>
+            <div class="input-group input-group-lg mb5">
+                <span class="input-group-addon"><i class="fa fa-fw fa-key"></i></span>
+                <input class="form-control" type="password" name="password" placeholder="password">
+            </div>
+            {% include 'util/form/captcha.twig' %}
+            {% include 'util/csrf.twig' %}
+            <button class="btn btn-primary btn-block btn-lg">login</button>
+        </form>
+        <a href="{{ urlFor('recovery-password') }}">recovery password</a>
+    </div>
+</div>

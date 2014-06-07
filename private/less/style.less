@@ -1,0 +1,91 @@
+@import "less.curious/for";
+@import "bootstrap/mixins";
+@import "bootstrap/variables";
+
+body {
+  padding-top: 70px;
+}
+
+.calc-w(@index) {
+  .w@{index} {
+    width: percentage((@index / @grid-columns));
+  }
+}
+
+.mini-form {
+  .make-sm-column(6);
+  .make-sm-column-offset(3);
+  .make-md-column(4);
+  .make-md-column-offset(4);
+  .make-lg-column(4);
+  .make-lg-column-offset(4);
+  form > :not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+
+.p {
+  .for(0, 5);
+  .-each(@i) {
+    &@{i} {
+      padding: @i * 1px;
+    }
+  }
+}
+
+.mb {
+  .for(0, 5);
+  .-each(@i) {
+    &@{i} {
+      margin-bottom: @i * 1px;
+    }
+  }
+}
+
+.w {
+  .for(0, @grid-columns);
+  .-each(@i) {
+    &@{i} {
+      width: percentage((@i / @grid-columns));
+    }
+  }
+}
+
+.z {
+  .for(0, 5);
+  .-each(@i) {
+    &@{i} {
+      z-index: @i;
+    }
+  }
+}
+
+.awesome-input {
+  &[type="radio"],
+  &[type="checkbox"] {
+    display: none;
+  }
+  &[type="radio"] + span:before,
+  &[type="checkbox"] + span:before {
+    font-family: 'FontAwesome';
+    padding-right: 3px;
+    width: 20px;
+    display: inline-block;
+  }
+
+  &[type="radio"] + span:before {
+    content: "\f10c"; /* circle-blank */
+  }
+
+  &[type="radio"]:checked + span:before {
+    content: "\f111"; /* circle */
+  }
+
+  &[type="checkbox"] + span:before {
+    content: "\f096"; /* check-empty */
+  }
+
+  &[type="checkbox"]:checked + span:before {
+    content: "\f046"; /* check */
+  }
+}

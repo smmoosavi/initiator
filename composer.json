@@ -1,0 +1,21 @@
+{
+    "require": {
+        "slim/slim": "2.*",
+        "twig/twig": "1.*",
+        "slim/views": "0.1.*",
+        "doctrine/orm": "2.4.*",
+        "symfony/yaml": "2.*",
+        "phpmailer/phpmailer": "5.*",
+        "smmoosavi/twig-intl": "dev-master",
+        "smmoosavi/php-gettext": "dev-master",
+        "smmoosavi/twig-php-gettext": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "": "src/"
+        }
+    },
+    "config": {
+        "vendor-dir": "packages"
+    }
+}

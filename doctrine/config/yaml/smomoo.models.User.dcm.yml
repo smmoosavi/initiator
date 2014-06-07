@@ -1,0 +1,28 @@
+smomoo\models\User:
+  type: entity
+  table: users
+  inheritance:
+    extends: smomoo\models\Metable
+    type: simple
+  id:
+    id:
+      type: integer
+      generator:
+        strategy: AUTO
+  fields:
+    username:
+      type: string
+    password:
+      type: string
+    mail:
+      type: string
+    status:
+      type: string
+    type:
+      column: `type`
+      type: string
+  oneToMany:
+    metas:
+      targetEntity: smomoo\models\UserMeta
+      mappedBy: obj
+      indexBy: key

@@ -1,0 +1,11 @@
+{% embed 'util/form/custom-input.twig' with {'name': name,'label': label,'help':help,'lw':lw} %}
+    {% block input %}
+        <select name="{{ name }}" id="input-{{ name }}" class="form-control">
+            {% block options %}
+                {% for ov,ol in options %}
+                    <option value="{{ ov }}"{{ ov==value?' selected':'' }}>{{ ol }}</option>
+                {% endfor %}
+            {% endblock %}
+        </select>
+    {% endblock %}
+{% endembed %}

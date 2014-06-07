@@ -1,0 +1,2 @@
+    var templates = {};
+    templates['example'] = new Hogan.Template({code: function (c,p,i) { var t=this;t.b(i=i||"");t.b("<p>");t.b("\n" + i);t.b("    hllow ");t.b(t.v(t.f("name",c,p,0)));t.b("!");t.b("\n" + i);t.b("</p>");return t.fl(); },partials: {}, subs: {  }});

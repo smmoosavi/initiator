@@ -1,0 +1,18 @@
+{% extends 'base.twig' %}
+{% block body %}
+    <div class="row">
+        <div class="mini-form">
+            {% if user is null %}
+                <span class="text-danger">invalid recovery code</span>
+            {% else %}
+                Are you sure you want to reset <b>{{ user.username }}</b> password?
+                <form action="{{ urlFor('recovery-password-post') }}" method="post">
+                    <input type="hidden" name="c" value="{{ c }}">
+                    {% include 'util/csrf.twig' %}
+                    <button class="btn btn-primary" type="submit">Yes</button>
+                    or skip this page
+                </form>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}

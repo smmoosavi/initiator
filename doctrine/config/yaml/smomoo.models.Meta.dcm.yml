@@ -1,0 +1,12 @@
+smomoo\models\Meta:
+  type: mappedSuperclass
+  fields:
+    key:
+      column: `key`
+      type: string
+    type:
+      column: `type`
+      type: string
+    value:
+      column: `value`
+      type: text

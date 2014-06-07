@@ -1,0 +1,17 @@
+smomoo\models\UserMeta:
+  type: entity
+  table: user_metas
+  inheritance:
+    extends: smomoo\models\Meta
+    type: simple
+  id:
+    id:
+      type: integer
+      generator:
+        strategy: AUTO
+  manyToOne:
+    obj:
+      targetEntity: smomoo\models\User
+      inversedBy: metas
+      joinColumn:
+        onDelete: CASCADE
