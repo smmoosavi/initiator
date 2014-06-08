@@ -1,6 +1,6 @@
 <?php
+use smmoosavi\util\gettext\L10n;
 use smomoo\models\User;
-use smmoosavi\gettext\L10n;
 
 /**
  * Created by PhpStorm.
