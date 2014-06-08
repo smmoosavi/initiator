@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "38d6a559a12ae2c45406b4b0d8e21605",
+    "hash": "64081ebefaddd77b1b20af6d33ae3300",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -711,16 +711,16 @@
         },
         {
             "name": "smmoosavi/php-gettext",
-            "version": "dev-master",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/smmoosavi/php-gettext.git",
-                "reference": "25518ac194df035def2839b971401e5ff99f82b8"
+                "reference": "074ce4a0ac4066c34ce81b730ce2da8b1151ef1a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/smmoosavi/php-gettext/zipball/25518ac194df035def2839b971401e5ff99f82b8",
-                "reference": "25518ac194df035def2839b971401e5ff99f82b8",
+                "url": "https://api.github.com/repos/smmoosavi/php-gettext/zipball/074ce4a0ac4066c34ce81b730ce2da8b1151ef1a",
+                "reference": "074ce4a0ac4066c34ce81b730ce2da8b1151ef1a",
                 "shasum": ""
             },
             "require": {
@@ -744,7 +744,7 @@
                 }
             ],
             "description": "Wrapper for php-gettext by danilo segan. This library provides PHP functions to read MO files even when gettext is not compiled in or when appropriate locale is not present on the system.",
-            "time": "2013-12-11 06:09:06"
+            "time": "2014-06-08 18:46:06"
         },
         {
             "name": "smmoosavi/twig-intl",
@@ -782,21 +782,21 @@
         },
         {
             "name": "smmoosavi/twig-php-gettext",
-            "version": "dev-master",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/smmoosavi/twig-php-gettext.git",
-                "reference": "41b62139068c9ece2bc473c7b6ad5762d5a54cd5"
+                "reference": "6a983822b965ba91391e88f50803675ca7d133b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/smmoosavi/twig-php-gettext/zipball/41b62139068c9ece2bc473c7b6ad5762d5a54cd5",
-                "reference": "41b62139068c9ece2bc473c7b6ad5762d5a54cd5",
+                "url": "https://api.github.com/repos/smmoosavi/twig-php-gettext/zipball/6a983822b965ba91391e88f50803675ca7d133b6",
+                "reference": "6a983822b965ba91391e88f50803675ca7d133b6",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0",
-                "smmoosavi/php-gettext": "dev-master",
+                "smmoosavi/php-gettext": "~1.0",
                 "twig/twig": "~1.0"
             },
             "type": "library",
@@ -813,7 +813,7 @@
                 }
             ],
             "description": "Twig extension for smmoosavi/php-gettext.",
-            "time": "2013-12-10 13:40:48"
+            "time": "2014-06-08 19:21:22"
         },
         {
             "name": "symfony/console",
@@ -987,9 +987,7 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "smmoosavi/twig-intl": 20,
-        "smmoosavi/php-gettext": 20,
-        "smmoosavi/twig-php-gettext": 20
+        "smmoosavi/twig-intl": 20
     },
     "platform": [
 
